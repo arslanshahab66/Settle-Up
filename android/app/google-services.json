@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "321643025562",
+    "project_id": "settle-up-group-expenses-5daa9",
+    "storage_bucket": "settle-up-group-expenses-5daa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321643025562:android:55bc88317fcee2ceb6fb23",
+        "android_client_info": {
+          "package_name": "com.example.settle_up_expenses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321643025562-34l0vhaagjv69jbl8vq7ra8731j6r27r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0rG1i7iMPNZJ9GHumK7-Fjr7A3sTlgbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321643025562-34l0vhaagjv69jbl8vq7ra8731j6r27r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

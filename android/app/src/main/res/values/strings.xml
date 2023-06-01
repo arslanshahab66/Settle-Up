@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Group_expenses</string>
+    <string name="facebook_app_id">182824951364767</string>
+    <string name="fb_login_protocol_scheme">fb182824951364767</string>
+    <string name="facebook_client_token">ef241a3e2086ee28a3421f87b773e4cf</string>
+</resources>
