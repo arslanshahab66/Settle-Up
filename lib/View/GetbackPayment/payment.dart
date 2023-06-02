@@ -482,13 +482,13 @@ class _GetBackFromState extends State<GetBackFrom> {
                           onTap: () {
                             payerCategoriesController.text = 'Other';
                             setState(() {
-                              selectedCategoryImage = 'assets/other.png';
+                              selectedCategoryImage = 'assets/more.png';
                               isCategorySelected = true;
                             });
                           },
                           child: const CustomCircleIcon(
-                            color: Color(0xffEFEB92),
-                            image: 'assets/other.png',
+                            color: Colors.grey,
+                            image: 'assets/more.png',
                             text: 'Other',
                           ),
                         ),
@@ -645,7 +645,7 @@ class _GetBackFromState extends State<GetBackFrom> {
         firestoreInstance.collection(collectionName).doc();
     final date = payerSelectedDate.text;
     final currentTime = DateFormat('HH:mm:ss').format(DateTime.now());
-       final serverTimestamp = FieldValue.serverTimestamp();
+    final serverTimestamp = FieldValue.serverTimestamp();
 
     List<String> selectedContactNames = [];
     // List<String> selectedContactInitials = [];

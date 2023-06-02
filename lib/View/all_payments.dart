@@ -201,10 +201,10 @@ class _AllPaymentsScreenState extends State<AllPaymentsScreen> {
                         String formattedDate =
                             DateFormat('d-MM-yyyy').format(date);
 
-                        final selectedContactValue =
-                            dataMap['paid by'].toString();
-                        final splitBy = dataMap['Split by'].toString();
-                        final contact = dataMap['selectedContacts'][0] ?? '';
+                        // final selectedContactValue =
+                        //     dataMap['paid by'].toString();
+                        // final splitBy = dataMap['Split by'].toString();
+                        // final contact = dataMap['selectedContacts'][0] ?? '';
 
                         return Column(
                           children: [
@@ -277,7 +277,7 @@ class _AllPaymentsScreenState extends State<AllPaymentsScreen> {
     } else if (category == 'Trip' || category == 'trip') {
       return 'assets/trip.png';
     } else if (category == 'Other' || category == 'other') {
-      return 'assets/other.png';
+      return 'assets/more.png';
     }
     // Add more conditions for other categories as needed
     return null; // Return null if no matching category is found

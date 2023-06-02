@@ -2,12 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:settle_up_expenses/View/IOweToPayment.dart/Owe_to_payment_contact.dart';
 import 'package:settle_up_expenses/View/contacts_helper.dart';
 import 'package:settle_up_expenses/View/tab_bar.dart';
 import '../../Widgets/avatar_widget.dart';
 import '../../Widgets/create_group_button.dart';
 import '../../Widgets/reuseable_container.dart';
+import 'Owe_to_payment_contact.dart';
 
 class IOweToScreen extends StatefulWidget {
   final List<Contact>? selectedContacts;
@@ -470,13 +470,13 @@ class _IOweToScreenState extends State<IOweToScreen> {
                           onTap: () {
                             categoriesController.text = 'Other';
                             setState(() {
-                              selectedCategoryImage = 'assets/other.png';
+                              selectedCategoryImage = 'assets/more.png';
                               isCategorySelected = true;
                             });
                           },
                           child: const CustomCircleIcon(
-                            color: Color(0xffEFEB92),
-                            image: 'assets/other.png',
+                            color: Colors.grey,
+                            image: 'assets/more.png',
                             text: 'Other',
                           ),
                         ),
@@ -633,7 +633,6 @@ class _IOweToScreenState extends State<IOweToScreen> {
         firestoreInstance.collection(collectionName).doc();
     final date = _selectedDateTime.text;
     List<String> selectedContactNames = [];
-    List<String> selectedContactInitials = [];
     final serverTimestamp = FieldValue.serverTimestamp();
     // final currentTime = DateFormat('HH:mm:ss').format(DateTime.now());
     final currentTime =

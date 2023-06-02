@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:settle_up_expenses/View/IOweToPayment.dart/i_owe_to.dart';
 import '../Widgets/custom_bottomsheet.dart';
 import '../Widgets/reuseable_list_tile.dart';
+import 'IOweToPayment.dart/i_owe_to.dart';
 
 class OweScreen extends StatefulWidget {
   const OweScreen({Key? key}) : super(key: key);
@@ -140,7 +140,7 @@ class _OweScreenState extends State<OweScreen> {
                               ),
                               SizedBox(
                                 width:
-                                    MediaQuery.of(context).size.height * 0.13,
+                                    MediaQuery.of(context).size.height * 0.11,
                               ),
                               GestureDetector(
                                 onTap: () {
@@ -281,7 +281,7 @@ class _OweScreenState extends State<OweScreen> {
     } else if (category == 'Trip' || category == 'trip') {
       return 'assets/trip.png';
     } else if (category == 'Other' || category == 'other') {
-      return 'assets/other.png';
+      return 'assets/more.png';
     }
     // Add more conditions for other categories as needed
     return null; // Return null if no matching category is found

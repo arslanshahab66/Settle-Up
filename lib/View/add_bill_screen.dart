@@ -473,13 +473,13 @@ class _AddBillScreenState extends State<AddBillScreen> {
                           onTap: () {
                             categoriesController.text = 'Other';
                             setState(() {
-                              selectedCategoryImage = 'assets/other.png';
+                              selectedCategoryImage = 'assets/more.png';
                               isCategorySelected = true;
                             });
                           },
                           child: const CustomCircleIcon(
-                            color: Color(0xffEFEB92),
-                            image: 'assets/other.png',
+                            color: Colors.grey,
+                            image: 'assets/more.png',
                             text: 'Other',
                           ),
                         ),

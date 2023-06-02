@@ -26,7 +26,7 @@ class _GetBackContactListState extends State<GetBackContactList> {
       isLoading = true;
     });
     Iterable<Contact> retrievedContacts = await ContactsService.getContacts();
-     if (mounted) {
+    if (mounted) {
       setState(() {
         _contacts = retrievedContacts.toList();
         isLoading = false;
@@ -56,7 +56,12 @@ class _GetBackContactListState extends State<GetBackContactList> {
                 setState(() {
                   _selectedContacts.add(contact);
                 });
-                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        GetBackFrom(selectedContacts: _selectedContacts),
+                  ),
+                );
               },
             ),
           ],
@@ -68,8 +73,7 @@ class _GetBackContactListState extends State<GetBackContactList> {
   void _navigateToNextScreen() {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (context) =>
-            GetBackFrom(selectedContacts: _selectedContacts),
+        builder: (context) => GetBackFrom(selectedContacts: _selectedContacts),
       ),
     );
   }

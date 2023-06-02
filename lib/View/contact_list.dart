@@ -57,7 +57,12 @@ class _ContactsListState extends State<ContactsList> {
                 setState(() {
                   _selectedContacts.add(contact);
                 });
-                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        AddBillScreen(selectedContacts: _selectedContacts),
+                  ),
+                );
               },
             ),
           ],

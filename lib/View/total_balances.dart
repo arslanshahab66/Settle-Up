@@ -365,7 +365,7 @@ class _TotalBalanceScreenState extends State<TotalBalanceScreen> {
     } else if (category == 'Trip' || category == 'trip') {
       return 'assets/trip.png';
     } else if (category == 'Other' || category == 'other') {
-      return 'assets/other.png';
+      return 'assets/more.png';
     }
     return null;
   }

@@ -10,12 +10,11 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     
     return MaterialApp(
-      title: 'My App',
+      title: 'My App',g
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           // Add your app theme here

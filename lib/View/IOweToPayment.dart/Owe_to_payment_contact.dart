@@ -1,7 +1,7 @@
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
-import 'package:settle_up_expenses/View/IOweToPayment.dart/i_owe_to.dart';
 
+import 'i_owe_to.dart';
 
 class OweToContactList extends StatefulWidget {
   const OweToContactList({super.key});
@@ -57,7 +57,12 @@ class _OweToContactListState extends State<OweToContactList> {
                 setState(() {
                   _selectedContacts.add(contact);
                 });
-                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        IOweToScreen(selectedContacts: _selectedContacts),
+                  ),
+                );
               },
             ),
           ],
