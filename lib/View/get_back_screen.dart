@@ -128,7 +128,7 @@ class _GetBackScreenState extends State<GetBackScreen> {
                                 width: 5,
                               ),
                               Text(
-                                totalBalance.toString(),
+                                totalBalance.toStringAsFixed(2),
                                 style: const TextStyle(
                                     color: Color(0xff5CAF9F),
                                     fontWeight: FontWeight.bold),
